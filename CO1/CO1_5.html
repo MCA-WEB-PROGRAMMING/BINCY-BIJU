@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>form</title>
+        <link rel ="stylesheet"  href="stylesheet.css">
+        <style>
+           .f{
+               top: 15%;
+                left: 35%;
+                position: absolute;
+                background-color: thistle;
+           }
+           
+           .s1{
+               color: rebeccapurple;
+           }
+           .s2{
+               background-color:slateblue;
+               color: skyblue;
+               text-align: center;   
+            }
+        </style>
+    </head>
+    <body >
+    
+     <center>   <h1 style="color: blueviolet;">REGISTRATION FORM</h1>
+        <form class="f">
+
+        
+                <label class="s1">Enter your name:</label>
+                <input type="text">
+                <br><br><br>
+                <label class="s1">Last name:</label>
+                <input type="text">
+                <br><br><br>
+                <label class="s1">Date of birth</label>
+                <input type="date">
+                <br><br><br>
+                <label class="s1">Enter your address:</label>
+                <textarea id="Address" name="Address" cols="35" rows="2">please enter your address</textarea>
+                <br><br><br>
+                <label class="s1">Sex</label>
+                <input type="radio" name="sex" value="Male" >Male 
+                <input type="radio" name="sex" value="Female" >Female
+                <br><br><br>
+                <label class="s1">Nationality</label>
+                <select value="Nationality">
+                  <option value="Indian">Indian</option>
+                   <option value="other">Other</option>  
+                </select>
+                <br><br><br>
+                <label class="s1">Languages Known</label>
+                <input type="checkbox" name=Languages known value="Malayalam">Malayalam
+                <input type="checkbox" name=Languages known value="English">English
+                <input type="checkbox" name=Languages known value="Hindi">Hindi
+                <br><br><br>
+                <label class="s1">Enter your password</label>
+                <input type="password">
+                <br><br><br>
+
+             <center>  <input  class="s2" type="button" name="submit" value="submit" ></center>
+        
+   </form>
+   
+   </body>
+ 
+</html>
