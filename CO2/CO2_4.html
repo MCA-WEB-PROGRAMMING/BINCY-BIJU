@@ -1,0 +1,19 @@
+<html>
+    <head>
+<title>backgroundcolor</title>
+<script>
+    function changecolor(){
+        var x=Math.floor(Math.random() * 256);
+        var y=Math.floor(Math.random() * 256);
+        var z=Math.floor(Math.random() * 256);
+        var bgcolor="rgb("+x+","+y+","+z+")";
+        document.body.style.background=bgcolor;
+    }
+</script>
+    </head>
+    <body>
+        <center>
+            <input type="button" value="GENERATE EVENT" onclick="changecolor();">
+        </center>
+    </body>
+</html>

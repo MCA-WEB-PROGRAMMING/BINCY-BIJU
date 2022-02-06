@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Examinationform</title>
+    <script>
+        function submitt() {
+            var c = Number(0);
+            if(document.getElementById("cpgm").checked) {
+                c=c+1;
+                
+            }
+            if(document.getElementById("number").checked) {
+                c=c+1;
+                
+                
+            }
+            if(document.getElementById("division").checked) {
+                c=c+1;
+                
+            }
+            document.getElementById("ans").innerHTML=c;
+        }
+    </script>
+</head>
+
+<body bgcolor="grey">
+    <form>
+        <center>
+            <h1>Online quiz</h1>
+        </center>
+        <div>
+            <p>1. What is the best programming language?</p>
+            <p>A.<input type="radio" name="c" value="C" id="cpgm">C</p>
+            <p>B.<input type="radio" name="c" value="C++">C++</p>
+            <p>C.<input type="radio" name="c" value="Java">Java</p>
+            <p>D.<input type="radio" name="c" value="Python">Python</p>
+        </div>
+        <div>
+            <p>2. What is 2*7</p>
+            <p>A.<input type="radio" name="d" value="14" id="number">14</p>
+            <p>B.<input type="radio" name="d" value="32" >32</p>
+            <p>C.<input type="radio" name="d" value="78" >78</p>
+            <p>D.<input type="radio" name="d" value="13" >13</p>
+        </div>
+
+        <div>
+            <p>3. What is 32/8?</p>
+            <p>A.<input type="radio" name="s" value="5" >5</p>
+            <p>B.<input type="radio" name="s" value="4" id="division">4</p>
+            <p>C.<input type="radio" name="s" value="3" >3</p>
+            <p>D.<input type="radio" name="s" value="6" >6</p>
+        </div>
+       
+    </form>
+    <button onClick="submitt()" value="submit">SUBMIT</button>
+    <p id="ans">Score</p>
+
+</body>
+
+</html>
